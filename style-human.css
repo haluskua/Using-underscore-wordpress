@@ -826,6 +826,7 @@ object {
 .site-content {
   display: -ms-flexbox;
   display: flex;
+  background-color: green;
 }
 
 .content-area {
