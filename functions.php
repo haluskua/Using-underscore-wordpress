@@ -151,8 +151,12 @@ register_nav_menus(array(
 
 	));
 
-// function remove_admin_bar()
-// {
-//     return true;
-// }
-// add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+// always show admin bar 
+
+// always show admin bar
+function pjw_login_adminbar( $wp_admin_bar) {
+	if ( !is_user_logged_in() )
+	$wp_admin_bar->add_menu( array( 'title' => __( 'Log In' ), 'href' => wp_login_url() ) );
+}
+add_action( 'admin_bar_menu', 'pjw_login_adminbar' );
+add_filter( 'show_admin_bar', '__return_true' , 1000 );
