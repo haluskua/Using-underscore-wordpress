@@ -826,7 +826,6 @@ object {
 .site-content {
   display: -ms-flexbox;
   display: flex;
-  background-color: green;
 }
 
 .content-area {
@@ -837,4 +836,23 @@ object {
 .site-content .widget-area {
   -ms-flex: 1;
       flex: 1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .site-branding {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
+  .site-title a {
+    font-size: 0.7em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1.4pt;
+    color: black;
+  }
 }
