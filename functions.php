@@ -141,3 +141,18 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+// Navigation Menus
+
+register_nav_menus(array(
+		'primary' => __( 'Primary Menu'),
+		'footer' => __( 'Footer Menu'),
+
+	));
+
+function remove_admin_bar()
+{
+    return true;
+}
+add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
