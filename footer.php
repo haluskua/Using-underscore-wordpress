@@ -27,7 +27,6 @@
 		<?php wp_nav_menu( $args); ?>
 		</nav>
 
-		<p><?php bloginfor('name'); ?> - &copy; <?php echo date('Y');?></p>
 
 	</footer>
 
