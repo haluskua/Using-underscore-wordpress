@@ -11,3 +11,21 @@
 .site-content .widget-area {
 	flex: 1;
 }
+/*oooooooooooooooooooooooooooooooooooooo*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	.site-branding {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		background-color: yellow;
+	}
+	.site-title a {
+		font-size: 0.5em;
+	}
+	.content .site-content {
+		width: 100%;
+		color: yellow;
+	}
+}
