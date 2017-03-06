@@ -13,6 +13,24 @@
 
 	</div><!-- #content -->
 
+	<footer class="site-footer">
+
+		<nav class="site-nav">
+		<?php 
+
+		$args = array(
+				'theme_location' => 'footer'
+			);
+
+		?>
+
+		<?php wp_nav_menu( $args); ?>
+		</nav>
+
+		<p><?php bloginfor('name'); ?> - &copy; <?php echo date('Y');?></p>
+
+	</footer>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underscores-sass' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'underscores-sass' ), 'WordPress' ); ?></a>

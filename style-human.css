@@ -24,8 +24,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
-# Elements
-# Forms
+# Elements 
+# Forms 
 # Navigation
 	## Links
 	## Menus
@@ -33,7 +33,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Alignments
 # Clearings
 # Widgets
-# Content
+# Content 
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -823,18 +823,16 @@ object {
   display: block;
 }
 
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
-  background-color: green;
+/*.site-content {
+	display: flex;
+	background-color: green;
+
 }
 
 .content-area {
-  -ms-flex: 2;
-      flex: 2;
+	flex: 2;
 }
 
 .site-content .widget-area {
-  -ms-flex: 1;
-      flex: 1;
-}
+	flex: 1;
+}*/
