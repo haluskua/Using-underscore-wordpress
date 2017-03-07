@@ -826,7 +826,6 @@ object {
 .site-content {
   display: -ms-flexbox;
   display: flex;
-  background-color: green;
 }
 
 .content-area {
@@ -837,4 +836,60 @@ object {
 .site-content .widget-area {
   -ms-flex: 1;
       flex: 1;
+}
+
+/* NAVIGATION MENUS */
+.site-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  list-style: none;
+}
+
+/*.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+	.site-nav ul:after { clear: both; }
+	.site-nav ul { *zoom: 1; }
+	
+	.site-nav ul li { 
+	list-style: none;
+	float: left;
+}*/
+/* Site Header Menu */
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 18px;
+  border: 0.8px solid #BBB;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.site-header nav ul li a:hover {
+  background-color: #ECECEC;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+  background-color: #006ec3;
+  color: #FFF;
+}
+
+.sub-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+/*footer */
+.site-footer nav ul li {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px dotted #bbb;
 }
